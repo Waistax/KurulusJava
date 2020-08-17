@@ -8,13 +8,13 @@ import waistax.registry.*;
 import java.awt.*;
 
 /**
- * Description
+ * Main class of the Kuruluþ game
  *
  * Author: Waistax
  * Created: 0.1 / 14 Aðu 2020 / 20:56:16
  *
  */
-public class Kurulus implements Game
+public class Kurulus implements App
 {
 	/** Kurulus instance */
 	public static final Kurulus KURULUS = new Kurulus();
@@ -36,7 +36,7 @@ public class Kurulus implements Game
 	{
 		// Set the renderer and the game
 		Engine.renderer = new AWTRenderer();
-		Engine.game = KURULUS;
+		Engine.app = KURULUS;
 		// Then start the engine
 		Engine.start();
 	}
